@@ -16,7 +16,9 @@ export const createUser = async (req, res) => {
         const [usuarios] = await db.query("SELECT nome, email, senha FROM usuario WHERE email = ?", [email])
 
         if (usuarios.length > 0) {
-            return res.status(409).json({ message: "Usuário já cadastrado." })
+            return res.status(409).json({
+                message: "Usuário já cadastrado."
+            })
         }
 
         const salts = 10
@@ -36,7 +38,7 @@ export const loginUser = async (req, res) => {
 
     try {
 
-        const { email, senha } = req.body
+        const { email, senha } = req.body;
 
         if (!email || !senha) {
 
