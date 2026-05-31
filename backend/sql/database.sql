@@ -19,7 +19,7 @@ CREATE TABLE livro(
     titulo VARCHAR(225) NOT NULL UNIQUE,
     autor VARCHAR(225) NOT NULL,
     genero VARCHAR(100) NOT NULL,
-    ano YEAR NOT NULL,
+    ano INT NOT NULL,
     disponivel ENUM("Disponivel", "Não disponivel") NOT NULL,
     ativo INT NOT NULL DEFAULT 1
 );

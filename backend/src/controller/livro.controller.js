@@ -2,7 +2,7 @@ import db from '../database/database.js'
 
 export const getAllBooks = async (req, res) => {
     try {
-        const [rows] = await db.query("SELECT titulo, autor, genero, ano, disponivel FROM livro WHERE ativo = 1")
+        const [rows] = await db.query("SELECT id, titulo, autor, genero, ano, disponivel FROM livro WHERE ativo = 1")
 
         return res.status(200).json({
             message: "Livros cadastrados: ",

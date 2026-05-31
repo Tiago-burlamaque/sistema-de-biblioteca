@@ -51,7 +51,7 @@ function RegisterBook() {
                                 id='titulo'
                                 value={titulo}
                                 onChange={(e) => setTitulo(e.target.value)}
-                                className='bg-neutral-400 rounded p-2 focus:outline-2 focus:outline-violet-900 transition-all'
+                                className='poppins-bold bg-neutral-400 rounded p-2 focus:outline-2 focus:outline-violet-900 transition-all'
                                 required />
 
                             <label className='poppins-extralight text-xl' htmlFor="autor">Autor</label>
@@ -60,7 +60,7 @@ function RegisterBook() {
                                 id='autor'
                                 value={autor}
                                 onChange={(e) => setAutor(e.target.value)}
-                                className='bg-neutral-400 rounded p-2 focus:outline-2 focus:outline-violet-900 transition-all'
+                                className='poppins-bold bg-neutral-400 rounded p-2 focus:outline-2 focus:outline-violet-900 transition-all'
                                 required />
 
                             <label className='poppins-extralight text-xl' htmlFor="genero">Genêro</label>
@@ -69,7 +69,7 @@ function RegisterBook() {
                                 id='genero'
                                 value={genero}
                                 onChange={(e) => setGenero(e.target.value)}
-                                className='bg-neutral-400 rounded p-2 focus:outline-2 focus:outline-violet-900 transition-all'
+                                className='poppins-bold bg-neutral-400 rounded p-2 focus:outline-2 focus:outline-violet-900 transition-all'
                                 required />
 
                             <label className='poppins-extralight text-xl' htmlFor="ano">Ano</label>
@@ -78,7 +78,7 @@ function RegisterBook() {
                                 id='ano'
                                 value={ano}
                                 onChange={(e) => setAno(e.target.value)}
-                                className='bg-neutral-400 rounded p-2 focus:outline-2 focus:outline-violet-900 transition-all'
+                                className='poppins-bold bg-neutral-400 rounded p-2 focus:outline-2 focus:outline-violet-900 transition-all'
                                 required />
 
                             <label className='poppins-extralight text-xl' htmlFor="disponivel">Disponivel</label>
